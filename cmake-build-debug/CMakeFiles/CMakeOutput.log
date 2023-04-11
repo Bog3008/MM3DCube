@@ -1,16 +1,16 @@
-The system is: Windows - 10.0.19044 - AMD64
+The system is: Windows - 10.0.19045 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.32.31326/bin/Hostx64/x64/cl.exe 
+Compiler: E:/Programs/MS_VS/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe 
 Build flags: 
 Id flags:  
 
 The output was:
 0
-Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31332 для x64
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.35.32215 для x64
 (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
 
 CMakeCCompilerId.c
-Microsoft (R) Incremental Linker Version 14.32.31332.0
+Microsoft (R) Incremental Linker Version 14.35.32215.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 /out:CMakeCCompilerId.exe 
@@ -21,20 +21,20 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "C:/Users/floma/CLionProjects/MM3DCube/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "E:/Clion Projects/MM3DCube/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.32.31326/bin/Hostx64/x64/cl.exe 
+Compiler: E:/Programs/MS_VS/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe 
 Build flags: 
 Id flags:  
 
 The output was:
 0
-Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31332 для x64
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.35.32215 для x64
 (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
 
 CMakeCXXCompilerId.cpp
-Microsoft (R) Incremental Linker Version 14.32.31332.0
+Microsoft (R) Incremental Linker Version 14.35.32215.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 /out:CMakeCXXCompilerId.exe 
@@ -45,21 +45,21 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/floma/CLionProjects/MM3DCube/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "E:/Clion Projects/MM3DCube/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/floma/CLionProjects/MM3DCube/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-evcmfh
+Change Dir: E:/Clion Projects/MM3DCube/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yfwir1
 
-Run Build Command(s):C:/Users/floma/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/ninja/win/x64/ninja.exe cmTC_0337d && [1/2] Building C object CMakeFiles\cmTC_0337d.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_0337d.exe
+Run Build Command(s):C:/Users/Bogdan/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/ninja/win/x64/ninja.exe cmTC_9aebf && [1/2] Building C object CMakeFiles\cmTC_9aebf.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_9aebf.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/floma/CLionProjects/MM3DCube/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fozvy6
+Change Dir: E:/Clion Projects/MM3DCube/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bkjyqk
 
-Run Build Command(s):C:/Users/floma/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/ninja/win/x64/ninja.exe cmTC_c4098 && [1/2] Building CXX object CMakeFiles\cmTC_c4098.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_c4098.exe
+Run Build Command(s):C:/Users/Bogdan/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/ninja/win/x64/ninja.exe cmTC_3c796 && [1/2] Building CXX object CMakeFiles\cmTC_3c796.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_3c796.exe
 
 
 
