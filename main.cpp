@@ -75,10 +75,10 @@ void draw_cube(cv::Mat & m, int radius, const vector<int>& angles){
     }
 
 
-    vector<cv::Scalar> colors = {{0,0,255}, {0,255,0}, {255,0,0}, {255, 255, 0}, {0,255,255}, {255,0,255}, {150,165,100}, {255,255,255}};
+    vector<cv::Scalar> colors = {{0,0,255}, {0,200,0}, {255,0,0}, {255, 255, 0}, {0,255,255}, {255,0,255}, {150,165,100}, {255,255,255}};
 
-    for(auto it = point_map.begin(),
-            en = point_map.end(); it != en; ++it){
+    for(auto it = point_map.rbegin(),
+            en = point_map.rend(); it != en; ++it){
         char ind = it->second;
         if(ind != 0){
             cv::Point p1(mod_points[ind - 1][1], mod_points[ind - 1][0]);
