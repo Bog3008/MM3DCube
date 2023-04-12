@@ -1,3 +1,3 @@
-E:/Clion Projects/MM3DCube/cmake-build-debug/CMakeFiles/MM3DCube.dir
-E:/Clion Projects/MM3DCube/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/Clion Projects/MM3DCube/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/floma/CLionProjects/MM3DCube/cmake-build-debug/CMakeFiles/MM3DCube.dir
+C:/Users/floma/CLionProjects/MM3DCube/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/floma/CLionProjects/MM3DCube/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,14 +1,15 @@
 #include <iostream>
 #include <cmath>
 #include <vector>
-#include <cassert>
+#include <map>
+#include <set>
 #include <Windows.h>
 #include "opencv2/opencv.hpp"
 #include <opencv2/highgui.hpp>
 #include <opencv2/core/utils/logger.hpp>
 
 
-using std::cout, std::endl, std::vector;
+using std::cout, std::endl, std::vector, std::set, std::map;
 
 
 vector<int> matrix_mult(const vector<vector<double>>& A, const vector<int>& B){
@@ -63,30 +64,37 @@ void draw_cube(cv::Mat & m, int radius, const vector<int>& angles){
     vector<vector<int>> cube_points = make_cube(radius);
 
     vector<vector<int>> mod_points(8);
-
+    std::multimap<int, char> point_map;
     for(int i = 0; i < 8; i++){
         mod_points[i] = matrix_mult(x_transform, cube_points[i]);
         mod_points[i] = matrix_mult(y_transform, mod_points[i]);
         mod_points[i] = matrix_mult(z_transform, mod_points[i]);
-    }
-
-
-    for(int i = 0; i < 8; i++) {
-
         mod_points[i][0] += m.rows/2;
         mod_points[i][1] += m.cols/2;
-
+        point_map.insert(std::pair(mod_points[i][2], i));
     }
+
+
     vector<cv::Scalar> colors = {{0,0,255}, {0,255,0}, {255,0,0}, {255, 255, 0}, {0,255,255}, {255,0,255}, {150,165,100}, {255,255,255}};
-    for(int i = 1; i < 8; i++) {
-        if (mod_points[i][0] > 0 && mod_points[i][1] > 0 && mod_points[i][0] < m.rows && mod_points[i][1] < m.cols) {
-            //m.at<uchar>(mod_points[i][0], mod_points[i][1]) = 255;
-            cv::Point p1(mod_points[i - 1][1], mod_points[i - 1][0]);
-            cv::Point p2(mod_points[i][1], mod_points[i][0]);
-            cv::line(m, p1, p2, colors[i], 5);
+
+    for(auto it = point_map.begin(),
+            en = point_map.end(); it != en; ++it){
+        char ind = it->second;
+        if(ind != 0){
+            cv::Point p1(mod_points[ind - 1][1], mod_points[ind - 1][0]);
+            cv::Point p2(mod_points[ind][1], mod_points[ind][0]);
+            cv::line(m, p1, p2, colors[ind], 5);
         }
     }
+    /*
+    for(int i = 1; i < 8; i++) {
+            //m.at<uchar>(mod_points[i][0], mod_points[i][1]) = 255;
+        cv::Point p1(mod_points[i - 1][1], mod_points[i - 1][0]);
+        cv::Point p2(mod_points[i][1], mod_points[i][0]);
+        cv::line(m, p1, p2, colors[i], 5);
 
+    }
+*/
 
 }
 int main() {
